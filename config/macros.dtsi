@@ -1,3 +1,9 @@
+macro_altf4: macro_altf4{
+compatible = "zmk,behavior-macro";
+label = "macro_altf4";
+#binding-cells = <0>;
+bindings = <&kp LA>, <&kp F4>;
+};
 macro_ctrlf5: macro_ctrlf5{
 compatible = "zmk,behavior-macro";
 label = "macro_ctrlf5";
