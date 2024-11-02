@@ -1,8 +1,14 @@
-macro_shift-f9: macro_shift-f9{
+macro_shift_f9: macro_shift_f9{
 compatible = "zmk,behavior-macro";
-label = "macro_shift-f9";
+label = "macro_shift_f9";
 #binding-cells = <0>;
-bindings = <&sk RIGHT_SHIFT>, <&kp F9>;
+bindings = <&sk LEFT_SHIFT>, <&kp F9>;
+};
+macro_win_l: macro_win_l{
+compatible = "zmk,behavior-macro";
+label = "macro_win_l";
+#binding-cells = <0>;
+bindings = <&sk LGUI>, <&kp L>;
 };
 macro_altf4: macro_altf4{
 compatible = "zmk,behavior-macro";
