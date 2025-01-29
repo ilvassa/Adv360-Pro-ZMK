@@ -59,6 +59,13 @@
             bindings = <&kp LC(SLASH)>;
             label = "COMMENT";
         };
+
+        ctrl_F5: ctrl_F5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(F5)>;
+            label = "CTRL_F5";
+        };
     };
 
     combos {
@@ -76,7 +83,7 @@
         default_layer {
             bindings = <
 &kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4    &kp N5  &tog 1                                                           &mo 3      &kp N6  &kp N7    &kp N8     &kp N9        &kp N0     &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R     &kp T   &kp F5                                                           &kp F10    &kp Y   &kp U     &kp I      &kp O         &kp P      &kp BSLH
+&kp TAB    &kp Q      &kp W     &kp E     &kp R     &kp T   &ctrl_F5                                                         &kp F10    &kp Y   &kp U     &kp I      &kp O         &kp P      &kp BSLH
 &kp ESC    &kp A      &kp S     &kp D     &kp F     &kp G   &kp F8         &kp LALT  &mo 2         &kp F2         &comment   &kp F9     &kp H   &kp J     &kp K      &kp L         &kp SEMI   &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V     &kp B                            &kp HOME      &kp PG_UP                            &kp N   &kp M     &kp COMMA  &kp PERIOD    &kp SLASH  &kp RSHFT
 &kp LCTRL  &kp GRAVE  &kp LGUI  &kp LBKT  &kp RBKT          &kp BACKSPACE  &kp DEL   &kp END       &kp PAGE_DOWN  &kp ENTER  &kp SPACE          &kp LEFT  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &tog 2
