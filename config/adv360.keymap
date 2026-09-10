@@ -101,11 +101,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2   &kp N3    &kp N4    &kp N5  &tog 1                                                                &mo 3      &kp N6  &kp N7    &kp N8     &kp N9        &kp N0     &kp MINUS
-&kp TAB    &kp Q      &kp W    &kp E     &kp R     &kp T   &kp F2                                                                &kp F8     &kp Y   &kp U     &kp I      &kp O         &kp P      &kp BSLH
-&kp ESC    &kp A      &kp S    &kp D     &kp F     &kp G   &kp F4         &kp LCTRL  &kp LEFT_ALT      &kp LEFT_GUI   &kp RCTRL  &kp F9     &kp H   &kp J     &kp K      &kp L         &kp SEMI   &kp SQT
-&kp LSHFT  &kp Z      &kp X    &kp C     &kp V     &kp B                             &kp HOME          &kp PG_UP                            &kp N   &kp M     &kp COMMA  &kp PERIOD    &kp SLASH  &kp RSHFT
-&mo 2      &kp GRAVE  &kp INS  &kp LBKT  &kp RBKT          &kp BACKSPACE  &kp DEL    &kp END           &kp PAGE_DOWN  &kp ENTER  &kp SPACE          &kp LEFT  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &mo 2
+&kp EQUAL  &kp N1     &kp N2  &kp N3    &kp N4    &kp N5  &tog 1                                                                &mo 3      &kp N6  &kp N7    &kp N8     &kp N9        &kp N0     &kp MINUS
+&kp TAB    &kp Q      &kp W   &kp E     &kp R     &kp T   &kp F2                                                                &kp F8     &kp Y   &kp U     &kp I      &kp O         &kp P      &kp BSLH
+&kp ESC    &kp A      &kp S   &kp D     &kp F     &kp G   &kp F4         &kp LCTRL  &kp LEFT_ALT      &kp LEFT_GUI   &kp RCTRL  &kp F9     &kp H   &kp J     &kp K      &kp L         &kp SEMI   &kp SQT
+&kp LSHFT  &kp Z      &kp X   &kp C     &kp V     &kp B                             &kp HOME          &kp PG_UP                            &kp N   &kp M     &kp COMMA  &kp PERIOD    &kp SLASH  &kp RSHFT
+&mo 2      &kp GRAVE  &tog 4  &kp LBKT  &kp RBKT          &kp BACKSPACE  &kp DEL    &kp END           &kp PAGE_DOWN  &kp ENTER  &kp SPACE          &kp LEFT  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &mo 2
             >;
         };
 
@@ -121,7 +121,7 @@
 
         layer_fn {
             bindings = <
-&kp F1  &kp F2           &kp F3    &kp F4  &kp F5  &kp F6  &tog 4                                                &mo 3           &kp F7  &kp F8     &kp F9     &kp F10    &kp F11  &kp F12
+&kp F1  &kp F2           &kp F3    &kp F4  &kp F5  &kp F6  &trans                                                &mo 3           &kp F7  &kp F8     &kp F9     &kp F10    &kp F11  &kp F12
 &trans  &trans           &trans    &trans  &trans  &trans  &shift_f6                                             &lambda_symb_1  &trans  &trans     &trans     &trans     &trans   &kp LC(TAB)
 &trans  &trans           &trans    &trans  &trans  &trans  &ctrl_F5   &trans  &kp RIGHT_ALT      &trans  &trans  &lambda_simb_2  &trans  &trans     &trans     &trans     &trans   &trans
 &trans  &trans           &trans    &trans  &trans  &trans                     &trans             &trans                          &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans   &trans
@@ -139,13 +139,13 @@
             >;
         };
 
-        games {
+        macros {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                            &trans   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp O                                             &trans   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp M      &trans   &trans      &trans  &trans    &trans   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                      &trans      &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp L   &kp I           &kp SPACE  &kp RET  &trans      &trans  &kp BSPC  &kp DEL          &trans  &trans  &trans  &trans  &tog 4
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans     &trans     &trans         &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp LC(C)  &kp LC(Z)  &kp LS(LC(Z))  &kp LC(X)  &kp LC(V)  &kp TAB
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans     &trans     &trans         &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans     &trans     &trans         &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans             &trans     &trans         &trans     &trans     &trans
             >;
         };
     };
